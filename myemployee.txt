@@ -16,3 +16,21 @@ Department: manager
 Email: ashishh@gmail.com
 Phoneno: 1391-3412
 
+Name: radha
+Age: 32
+Department: developer
+Email: radhaaa@gmail.com
+Phoneno: 8472347239
+
+Name: ashish
+Age: 55
+Department: manager
+Email: ashishh@gmail.com
+Phoneno: 1391-3412
+
+Name: aishwarya
+Age: 44
+Department: entc
+Email: aish@gmail.com
+Phoneno: 7364372903
+

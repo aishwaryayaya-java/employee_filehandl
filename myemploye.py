@@ -67,7 +67,7 @@ class Employee:
         with open("myemployee.txt", "r") as file:
             lines = file.readlines()
 
-        with open("myemployee.txt", "w") as file:
+        with open("myemployee.txt", "a") as file:
             for line in lines:
                 file.write(line.replace(old, new))
 
@@ -125,33 +125,41 @@ class Employee:
             json.dump(data, file, indent=2)
 
 def main():
-    print("1 is to write \n2 is to read from text \n3 is to read from csv \n4 is to read from json \n5 is to update files \n6 is to delete a record")
-    user_input = int(input("Enter 1/2/3/4/5/6:"))
-
-    if user_input == 1:
-        name = input("Enter your name :")
-        age = int(input("Enter your age:"))
-        department = input("Enter your department:")
-        email = input("Enter your email:")
-        phoneno = input("Enter your phone number:")
-        employee = Employee(name, age, department, email, phoneno)
-        employee.write_file()
-    elif user_input == 2:
-        Employee.read_txt()
-    elif user_input == 3:
-        Employee.read_csv()
-    elif user_input == 4:
-        Employee.read_json()
-    elif user_input == 5:
-        key1 = input("Enter key to change: ")
-        value1 = input("Enter value to write:")
-        Employee.update_file(key1, value1)
-    elif user_input == 6:
-        name1 = input("Enter the name of the person whose details you want to delete:")
-        Employee.delete_items(name1)
-
+    
+    while True:
+        
+        print("1 is to write \n2 is to read from text \n3 is to read from csv \n4 is to read from json \n5 is to update files \n6 is to delete a record")
+        user_input = int(input("Enter 0/1/2/3/4/5/6:"))
+        
+        if user_input == 1:
+            name = input("Enter your name :")
+            age = int(input("Enter your age:"))
+            department = input("Enter your department:")
+            email = input("Enter your email:")
+            phoneno = input("Enter your phone number:")
+            employee = Employee(name, age, department, email, phoneno)
+            employee.write_file()
+        elif user_input == 2:
+            Employee.read_txt()
+        elif user_input == 3:
+            Employee.read_csv()
+        elif user_input == 4:
+            Employee.read_json()
+        elif user_input == 5:
+            key1 = input("Enter key to change: ")
+            value1 = input("Enter value to write:")
+            Employee.update_file(key1, value1)
+        elif user_input == 6:
+            name1 = input("Enter  name you want to delete:")
+            Employee.delete_items(name1)
+        
+        
+        elif user_input==0:
+            break 
+        else:
+            continue
 main()
-
+        
 
 
 

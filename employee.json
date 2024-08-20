@@ -1,17 +1,10 @@
 [
   {
-    "Name": "aishwarya",
+    "Name": "aish",
     "Age": 44,
     "Department": "sciencs",
     "Email": "aish@gmail",
     "Phoneno": "3242"
-  },
-  {
-    "Name": "rahul",
-    "Age": 34,
-    "Department": "qa",
-    "Email": "rahulol@gmail.com",
-    "Phoneno": "87834573459"
   },
   {
     "Name": "radha",
@@ -26,5 +19,12 @@
     "Department": "manager",
     "Email": "ashishh@gmail.com",
     "Phoneno": "1391-3412"
+  },
+  {
+    "Name": "aishwarya",
+    "Age": 44,
+    "Department": "entc",
+    "Email": "aish@gmail.com",
+    "Phoneno": "7364372903"
   }
 ]
